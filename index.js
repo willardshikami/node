@@ -1,5 +1,3 @@
-require('./app/index');
-//calling a http module
 var http = require('http');
 
 //method to create a server
@@ -7,7 +5,7 @@ var server = http.createServer(function(req, res){
     //a response header (status, object containing content type)
     res.writeHead(200, {'Content-Type': 'text/plain'});
     //method to end response and send it to the browser.
-    res.end('Hello World, This is dope');
+    res.end('Hello World');
 });
 
 //listening to a call so as to fire the createServer function
